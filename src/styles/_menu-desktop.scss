@@ -1,0 +1,41 @@
+.desktop{
+    display: none;
+    width: 300px;
+    
+
+    @include medium {
+        display: inline-block;
+        margin-right: 10%;
+    }
+
+    @include large {
+        margin-right: 17%;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__item {
+        list-style: none;
+        font-family: $decor;
+        font-size: 1.6rem;
+        color: #3D3A48;
+        cursor: pointer;
+        z-index: 35;
+    }
+
+    a {
+        color: #3D3A48;
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+
+    a:hover {
+        opacity: 0.5;
+        text-decoration: none;
+        transition: opacity 0.2s;
+    }
+}

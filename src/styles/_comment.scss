@@ -1,0 +1,38 @@
+.comment {
+    width: 100%;
+    position: absolute;
+
+    &__slider {
+        margin: 0px auto 0 auto;
+        width: 290px;
+        height: 100px;
+        background-image: url("/src/images/comment1.png");
+        animation: slide 25s infinite;
+        margin-bottom: 100px;
+    
+        @include medium {
+            margin: 20px 0 0 5%;
+        }
+    }
+    
+    @keyframes slide  {
+    
+        10%{
+            background-image: url("/src/images/comment1.png");
+            
+        }
+    
+        66%{
+            background-image: url("/src/images/comment2.png");
+            
+        }
+    
+        100%{
+            background-image: url("/src/images/comment3.png");
+            
+        }
+        
+    }
+}
+
+

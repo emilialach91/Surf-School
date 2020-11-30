@@ -1,0 +1,19 @@
+$primary: 'Poppins', sans-serif;
+$decor: 'Qwigley', cursive;
+
+
+
+$medium: 768px;
+@mixin medium {
+    @media (min-width: #{$medium}){
+        @content;
+    }
+}
+
+$large: 991px;
+@mixin large {
+    @media (min-width: #{$large}){
+        @content;
+    }
+}
+

@@ -1,0 +1,28 @@
+.board {
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    display: none;
+    transform: rotate(10deg);
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+    
+
+    @include large {
+        display: block;
+    }
+    
+    &__image {
+        height: 100%;
+        cursor: pointer;
+    }
+
+}
+
+.rot {
+    transform: rotate(-10deg);
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+}

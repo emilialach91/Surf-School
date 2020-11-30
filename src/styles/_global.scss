@@ -1,0 +1,55 @@
+* {
+    margin:0 ;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: $primary;
+}
+
+body{
+    width: 100%;
+    height:100vh; 
+
+
+    @include large {
+        background-image: url("/src/images/background-wave.png");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+.container{
+    max-width: 1440px;
+    background-image: url("/src/images/mobile_background.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    
+
+    @include medium {
+        background-image: url("/src/images/background-medium.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: hidden;
+    }
+
+    @include large{
+        margin-top: 50px;
+        height: 75%;
+        width: 80%;
+        margin-left: 60px;
+        background-position: top;
+    }
+}
+
+
+
+
+
+  

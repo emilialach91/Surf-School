@@ -1,0 +1,59 @@
+.card {
+    background-color: transparent;
+    border: none;
+    margin-top: 20%;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    transform: translateY(-100px);
+    z-index: 20;
+
+
+    @include medium {
+        background-color: #315259;;
+    }
+    
+}
+
+.carousel-item {
+    padding-top: 50px;
+    transition: transform 0.8s ease-in-out !important;
+
+}
+
+// .carousel-indicators {
+//     transform: translateY(200px);
+// }
+
+
+.container-carousel-mobile {
+    max-height: 500px;
+    margin: 150px auto 0 auto;
+
+}
+
+.container-carousel-desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    .container-carousel-mobile {
+        display: none;
+    }
+
+    .container-carousel-desktop {
+        display: initial;
+        transform: translateY(-100px);
+    }
+
+    .carousel-indicators {
+        padding-bottom: 0;
+        transform: translateY(-40px);
+        z-index: 20;
+     }
+}
+
