@@ -15,7 +15,7 @@ body{
 
 
     @include large {
-        background-image: url("/src/images/background-wave.png");
+        background-image: url("./images/background-wave.png");
         background-position: right;
         background-size: cover;
         background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body{
 
 .container{
     max-width: 1440px;
-    background-image: url("/src/images/mobile_background.png");
+    background-image: url("./images/mobile_background.png");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body{
     
 
     @include medium {
-        background-image: url("/src/images/background-medium.png");
+        background-image: url("./images/background-medium.png");
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: hidden;
