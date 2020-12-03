@@ -33,20 +33,20 @@ npm run start:dev
 
 ### Home page
 
-![App-Auth](https://user-images.githubusercontent.com/28848115/96506358-63bd5180-124f-11eb-9088-21c2c2839c2a.png)
+![homepage](https://user-images.githubusercontent.com/59490664/101066902-c87a0480-358e-11eb-952f-b93f6c910bd3.jpeg)
 
 ### Subpage 1
 
-![App](https://user-images.githubusercontent.com/28848115/96506368-66b84200-124f-11eb-9d5c-91809cfc1a83.png)
+![Subpage1](https://user-images.githubusercontent.com/59490664/101066947-d760b700-358e-11eb-9994-cff95d4034ff.jpeg)
 
 ### Subpage 2
 
-![App-Settings](https://user-images.githubusercontent.com/28848115/96506373-68820580-124f-11eb-9177-61eab038125c.png)
+![Subpage2](https://user-images.githubusercontent.com/59490664/101066983-e21b4c00-358e-11eb-86d2-e53111130a96.jpeg)
 
 ### Subpage 3
 
-![App-Settings](https://user-images.githubusercontent.com/28848115/96506373-68820580-124f-11eb-9177-61eab038125c.png)
+![Subpage3](https://user-images.githubusercontent.com/59490664/101067024-ef383b00-358e-11eb-8b01-de3770e5025a.jpeg)
 
 ### Subpage 4
 
-![App-Settings](https://user-images.githubusercontent.com/28848115/96506373-68820580-124f-11eb-9177-61eab038125c.png)
+![Subpage4](https://user-images.githubusercontent.com/59490664/101067055-f95a3980-358e-11eb-9bdc-4884d2fc2eec.jpeg)
