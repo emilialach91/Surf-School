@@ -40,6 +40,7 @@
         justify-content: center;
         margin-right: 10%;
         transition: all 0.3s;
+        cursor: pointer;
 
         @include medium {
             display: none;

@@ -121,6 +121,7 @@ body {
   margin-right: 10%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
