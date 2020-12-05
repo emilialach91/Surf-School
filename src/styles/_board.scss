@@ -9,7 +9,6 @@
     transition: ease-in-out 0.5s;
     overflow: hidden;
     
-
     @include large {
         display: block;
     }
@@ -18,7 +17,6 @@
         height: 100%;
         cursor: pointer;
     }
-
 }
 
 .rot {

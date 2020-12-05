@@ -10,7 +10,6 @@
     justify-content: center;
     margin: 0 auto;
     
-    
     &__content {
         width: 100%;
         display: flex;
@@ -23,7 +22,6 @@
             max-width: 55%;
             padding: 0 300px 0 30px;
         }
-    
     }
 
     &__title {
@@ -41,7 +39,6 @@
         padding-bottom: 25px;
         color: #3D3A48;
         padding-bottom: 30px;
-        
     }
 
     &__description {
@@ -92,8 +89,6 @@
         align-items: center;
         justify-content: center;
         
-        
-
         @include large {
             margin-top: 30%;
             transform: translateX(-100px);

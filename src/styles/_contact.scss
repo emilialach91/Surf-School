@@ -1,15 +1,10 @@
 .contact {
     max-width: 1440px;
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: $primary;
     margin: 0 auto;
-
-    @include large {
-        height: 100vh;
-    }
 
     &__title {
         font-family: $primary;
@@ -17,11 +12,6 @@
         font-size: 40px;
         text-align: center;
         margin: 40px 0;
-
-
-        // @include large {
-        //    padding: 40px 0;
-        // }
     }
 
     &__description {
@@ -48,14 +38,13 @@
         @include large {
             width: 40%;
             margin-top: 80px;
-        } 
-        
+        }   
     }
+
     &__info {
         display: flex;
         flex-direction: column;
-        margin-bottom: 25px;
-       
+        margin-bottom: 25px;  
     }
 
     &__detail {
@@ -99,7 +88,6 @@
         align-items: center;
         justify-content: center;
         
-
         @include large {
             margin-top: 80px;
         }
@@ -118,8 +106,6 @@
     }
 }
 
-
-
 #map {
     width: 90%;
     margin: auto;
@@ -133,6 +119,7 @@
         height: 400px;
     }
 }
+
 .fas{
     color: #315259; 
     font-size: 20px;
@@ -144,4 +131,18 @@
     font-size: 30px;
     margin: 15px;
     color:#3D3A48;
+    cursor: pointer;
+}
+
+
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+
+.fa-twitter:hover{
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #8a3ab9;
 }

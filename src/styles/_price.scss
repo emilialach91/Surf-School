@@ -9,7 +9,6 @@
     font-family: $primary;
     margin: 0 auto;
 
-
     &__content {
         width: 100%;
         text-align: center;
@@ -81,7 +80,6 @@
     &__pound {
         font-size: 20px;
         margin-right: 10px;
-
     }
 
     &__amount {
@@ -127,7 +125,6 @@
         transition: opacity .3s;
     }
 
-
     &__button:hover {
         cursor: pointer;
         opacity: 0.6;
@@ -139,7 +136,6 @@
         text-align: center;
         text-decoration: none;
     }
-
 }
 
 .home {
