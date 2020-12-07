@@ -2,12 +2,18 @@
     position: absolute;
     z-index: 30;
     top: 0;
-    right: 0px;
-    height: 100vh;
+    right: 0;
+    transform: translateX(-100px);
+    height: 95vh;
     display: none;
     transform: rotate(10deg);
     transition: ease-in-out 0.5s;
     overflow: hidden;
+    margin: auto;
+
+    &--home {
+        right: -250px;
+    }
     
     @include large {
         display: block;

@@ -3,6 +3,13 @@ $decor: 'Qwigley', cursive;
 
 
 
+$small: 540px;
+@mixin small {
+    @media (min-width: #{$small}){
+        @content;
+    }
+}
+
 $medium: 768px;
 @mixin medium {
     @media (min-width: #{$medium}){
@@ -13,6 +20,13 @@ $medium: 768px;
 $large: 991px;
 @mixin large {
     @media (min-width: #{$large}){
+        @content;
+    }
+}
+
+$extra-large: 1px;
+@mixin extra-large {
+    @media (min-width: #{$extra-large}){
         @content;
     }
 }
