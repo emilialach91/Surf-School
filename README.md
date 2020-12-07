@@ -1,5 +1,7 @@
 # Surf School
 
+https://emilialach91.github.io/Surf-School/index.html
+
 ## Overview
 
 Welcome to the Surf School, the pleace where your dreams come true! Sign up for the course right now! There is still some available vacanccies around the world. You can easily find the perfect pleace, teacher and course in appropreate price range. In case of any problems with finding the school, do not forget to check the contact page with the map.
