@@ -1,9 +1,6 @@
 .price {
     max-width: 1440px;
-    background-image: url("./images/background-price.png");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     font-family: $primary;
@@ -22,9 +19,13 @@
     &__title {
         font-family: $primary;
         color: #315259;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
         margin-bottom: 25px;
+
+        @include large  {
+            font-size: 40px;
+        }
     }
 
     &__description {
@@ -32,10 +33,12 @@
         text-align: center;
         color: #3D3A48;
         margin: auto;
-        font-size: 18px;
+        font-size: 16px;
 
         @include large {
             margin: 0 10%;
+            font-size: 18px;
+
         }
     }
 

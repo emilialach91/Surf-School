@@ -12,15 +12,10 @@ html {
 body{
     width: 100%;
     height:100vh; 
-    overflow: hidden;
-
-    @include large {
-        background-image: url("./images/background-wave.png");
-        background-position: right;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-    }
+    background-image: url("./images/background-wave.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -31,6 +26,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
+    overflow: hidden;
     
 
     @include medium {
@@ -38,6 +34,7 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         height: 100vh;
+        overflow: visible;
     }
 
     @include large{

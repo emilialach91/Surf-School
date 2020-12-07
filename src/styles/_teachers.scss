@@ -1,9 +1,6 @@
 .teachers {
     max-width: 1440px;
-    background-image: url("./images/background-wave.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,16 +12,20 @@
    
     &__title{
         font-family: $primary;
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 5%;
         margin-bottom: 25px;
         color: #315259;
         text-align: center;
+
+        @include large {
+            font-size: 40px;
+        }
     }
 
     &__description {
         font-family: $primary;
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 auto;
         padding: 0 20px;
         text-align: center;
@@ -33,6 +34,7 @@
 
         @include large {
             margin: 0 10%;
+            font-size: 18px;
         } 
     }
 
@@ -97,6 +99,11 @@
     }
 }
 
+.teachers__person  {
+    transform: scale(1.0); 
+    transition: ease-in-out .3s;
+    margin-top: 20px;
+}
 .teachers__person:hover  {
     transform: scale(1.1); 
     transition: ease-in-out .3s;

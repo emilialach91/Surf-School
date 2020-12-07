@@ -1,15 +1,12 @@
 .about {
-    background-image: url("./images/background-wave.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: transparent;
     height: 100vh;
     max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    
+
     &__content {
         width: 100%;
         display: flex;
@@ -26,10 +23,14 @@
 
     &__title {
         font-family: $primary;
-        font-size: 40px;
+        font-size: 30px;
         margin: 0;
         padding-bottom: 10px;
         color: #315259;
+
+        @include large {
+            font-size: 40px;
+        }
     }
 
     &__subtitle {
@@ -42,11 +43,15 @@
     }
 
     &__description {
-        font-size: 18px;
+        font-size: 16px;
         text-align: justify;
         line-height: 1.6;
         margin: 0 auto;
         color: #3D3A48;
+
+        @include large {
+            font-size: 18px;
+        }
     }
 
     &__board {
