@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    // overflow: hidden;
 
     &__content {
         width: 100%;
@@ -60,31 +59,36 @@
         border: 1px solid #5b6b82;
         border-radius: 15px;
         color: #5b6b82;
-        background-color: transparent;
+        background-color: white;
         text-align: center;
         width: 80px;
         height: 30px;
         cursor: pointer;
-        opacity: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        // @include large {
-        //     margin-top: 20%;
-        //     // transform: translateX(-100px);
-        // }
+        transition: ease-in-out .3s;
+        outline: none;
     }
 
     &__button:hover {
         cursor: pointer;
-        opacity: 0.6;
-        transition: opacity .3s;
+        transition: ease-in-out .3s;
+        background-color: #888e97;
     }
 
     &__home {
         color: #5b6b82;
         text-align: center;
         text-decoration: none;
+        width: 100%;
+        transition: ease-in-out .3s;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    &__home:hover {
+        color: white;
+        transition: ease-in-out .3s;
     }
 }

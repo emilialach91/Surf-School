@@ -33,6 +33,7 @@
         color: #3D3A48;
         margin: auto;
         font-size: 16px;
+        margin: 0 30px;
 
         @include large {
             margin: 0 10%;
@@ -54,11 +55,20 @@
     }
 
     &__info {
-        width: 350px;
+        width: 280px;
         border: .5px solid #D6D3E2;
         box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.6);
         background-color: white;
-        margin: 30px;
+        margin: 15px;
+
+        @include small {
+            width: 320px;
+        }
+
+        @include medium {
+            width: 350px;
+            margin: 30px;
+        }
     }
 
     &__heading {
@@ -90,7 +100,15 @@
 
     &__list {
         list-style: none;
-        padding-left: 70px;
+        padding-left: 30px;
+
+        @include small {
+            padding-left: 50px;
+        }
+
+        @include medium {
+            padding-left: 70px;
+        }
     }
      
     &__check {
@@ -108,51 +126,69 @@
     &__button {
         border: 1px solid #5b6b82;
         border-radius: 15px;
-        font-size: 20px;
+        font-size: 18px;
         color: #5b6b82;
-        background-color: white;
+        background-color: transparent;
         text-align: center;
-        width: 200px;
+        width: 150px;
         margin: 20px 0;
         height: 40px;
         cursor: pointer;
         opacity: 1;
         transition: opacity .3s;
         outline: none;
+
+        @include medium {
+            width: 200px;
+            font-size: 20px;
+        }
     }
 
     &__button:hover {
         cursor: pointer;
         opacity: 0.6;
         transition: opacity .3s;
+
+    }
+
+    &__back {
+        margin: 20px 0 20px 5%;
+        border: 1px solid #5b6b82;
+        border-radius: 15px;
+        color: #5b6b82;
+        background-color: white;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out .3s;
+        outline: none;
+    }
+
+    &__back:hover{
+        cursor: pointer;
+        transition: ease-in-out .3s;
+        background-color: #888e97;
     }
 
     &__home {
         color: #5b6b82;
         text-align: center;
         text-decoration: none;
+        width: 100%;
+        transition: ease-in-out .3s;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    &__home:hover {
+        color: white;
+        transition: ease-in-out .3s;
     }
 }
 
-.home {
-    margin: 0 0 5% 5%;
-    border: 1px solid #5b6b82;
-    border-radius: 15px;
-    color: #5b6b82;
-    background-color: white;
-    text-align: center;
-    width: 80px;
-    height: 30px;
-    cursor: pointer;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include large {
-        transform: translateY(50px);
-    }
-}
 
 .far {
     margin-right: 8px;

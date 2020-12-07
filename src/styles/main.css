@@ -671,12 +671,11 @@ body {
   border: 1px solid #5b6b82;
   border-radius: 15px;
   color: #5b6b82;
-  background-color: transparent;
+  background-color: white;
   text-align: center;
   width: 80px;
   height: 30px;
   cursor: pointer;
-  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,19 +685,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  outline: none;
 }
 
 .about__button:hover {
   cursor: pointer;
-  opacity: 0.6;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  background-color: #888e97;
 }
 
 .about__home {
   color: #5b6b82;
   text-align: center;
   text-decoration: none;
+  width: 100%;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.about__home:hover {
+  color: white;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
 .teachers {
@@ -800,7 +813,6 @@ body {
   width: 80px;
   height: 30px;
   cursor: pointer;
-  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,25 +822,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 991px) {
-  .teachers__button {
-    margin-top: 80px;
-  }
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  outline: none;
 }
 
 .teachers__button:hover {
   cursor: pointer;
-  opacity: 0.6;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  background-color: #888e97;
 }
 
 .teachers__home {
   color: #5b6b82;
   text-align: center;
   text-decoration: none;
+  width: 100%;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.teachers__home:hover {
+  color: white;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
 .teachers__person {
@@ -891,6 +911,7 @@ body {
   color: #3D3A48;
   margin: auto;
   font-size: 16px;
+  margin: 0 30px;
 }
 
 @media (min-width: 991px) {
@@ -929,12 +950,25 @@ body {
 }
 
 .price__info {
-  width: 350px;
+  width: 280px;
   border: .5px solid #D6D3E2;
   -webkit-box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.6);
           box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.6);
   background-color: white;
-  margin: 30px;
+  margin: 15px;
+}
+
+@media (min-width: 540px) {
+  .price__info {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price__info {
+    width: 350px;
+    margin: 30px;
+  }
 }
 
 .price__heading {
@@ -975,7 +1009,19 @@ body {
 
 .price__list {
   list-style: none;
-  padding-left: 70px;
+  padding-left: 30px;
+}
+
+@media (min-width: 540px) {
+  .price__list {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price__list {
+    padding-left: 70px;
+  }
 }
 
 .price__check {
@@ -997,11 +1043,11 @@ body {
 .price__button {
   border: 1px solid #5b6b82;
   border-radius: 15px;
-  font-size: 20px;
+  font-size: 18px;
   color: #5b6b82;
-  background-color: white;
+  background-color: transparent;
   text-align: center;
-  width: 200px;
+  width: 150px;
   margin: 20px 0;
   height: 40px;
   cursor: pointer;
@@ -1011,6 +1057,13 @@ body {
   outline: none;
 }
 
+@media (min-width: 768px) {
+  .price__button {
+    width: 200px;
+    font-size: 20px;
+  }
+}
+
 .price__button:hover {
   cursor: pointer;
   opacity: 0.6;
@@ -1018,23 +1071,15 @@ body {
   transition: opacity .3s;
 }
 
-.price__home {
-  color: #5b6b82;
-  text-align: center;
-  text-decoration: none;
-}
-
-.home {
-  margin: 0 0 5% 5%;
+.price__back {
+  margin: 20px 0 20px 5%;
   border: 1px solid #5b6b82;
   border-radius: 15px;
   color: #5b6b82;
   background-color: white;
-  text-align: center;
   width: 80px;
   height: 30px;
   cursor: pointer;
-  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,13 +1089,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  outline: none;
 }
 
-@media (min-width: 991px) {
-  .home {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
+.price__back:hover {
+  cursor: pointer;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  background-color: #888e97;
+}
+
+.price__home {
+  color: #5b6b82;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.price__home:hover {
+  color: white;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
 .far {
@@ -1173,38 +1238,50 @@ body {
 }
 
 .contact__button {
-  margin: 0 0 5% 5%;
+  margin: 3% 0 5% 5%;
   border: 1px solid #5b6b82;
   border-radius: 15px;
   color: #5b6b82;
   background-color: white;
-  text-align: center;
   width: 80px;
   height: 30px;
   cursor: pointer;
-  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  outline: none;
 }
 
 .contact__button:hover {
   cursor: pointer;
-  opacity: 0.6;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  background-color: #888e97;
 }
 
 .contact__home {
   color: #5b6b82;
   text-align: center;
   text-decoration: none;
+  width: 100%;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.contact__home:hover {
+  color: white;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
 #map {
