@@ -2,23 +2,25 @@
     position: absolute;
     z-index: 30;
     top: 0;
-    right: 0;
-    transform: translateX(-100px);
+    right: 65px;
     height: 95vh;
     display: none;
     transform: rotate(10deg);
     transition: ease-in-out 0.5s;
-    overflow: hidden;
     margin: auto;
+    @include large {
+        display: block;
+    }
+
+    @include extra-large {
+        right: 105px;
+    }
 
     &--home {
         right: -250px;
     }
-    
-    @include large {
-        display: block;
-    }
-    
+
+
     &__image {
         height: 100%;
         cursor: pointer;
@@ -28,5 +30,4 @@
 .rot {
     transform: rotate(-10deg);
     transition: ease-in-out 0.5s;
-    overflow: hidden;
 }
