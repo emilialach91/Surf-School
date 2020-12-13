@@ -1,6 +1,7 @@
 .teachers {
     max-width: 1440px;
     display: flex;
+    font-family: $primary;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -66,7 +67,7 @@
     }
 
     &__button {
-        margin: 5% 0 5% 5%;
+        margin: 5% 0 10% 5%;
         border: 1px solid #5b6b82;
         border-radius: 15px;
         color: #5b6b82;
@@ -81,11 +82,12 @@
         transition: ease-in-out .3s;
         outline: none;
     }
-
-    &__button:hover {
-        cursor: pointer;
-        transition: ease-in-out .3s;
-        background-color: #888e97;
+    @include medium {
+        &__button:hover {
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            background-color: #888e97;
+        }
     }
 
     &__home {
@@ -98,9 +100,11 @@
         margin-top: 10px;
     }
 
-    &__home:hover {
-        color: white;
-        transition: ease-in-out .3s;
+    @include medium {
+        &__home:hover {
+            color: white;
+            transition: ease-in-out .3s;
+        }
     }
 }
 
@@ -109,7 +113,10 @@
     transition: ease-in-out .3s;
     margin-top: 20px;
 }
-.teachers__person:hover  {
-    transform: scale(1.1); 
-    transition: ease-in-out .3s;
+
+@include medium {
+    .teachers__person:hover  {
+        transform: scale(1.1); 
+        transition: ease-in-out .3s;
+    }
 }

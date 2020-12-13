@@ -24,7 +24,7 @@ $large: 991px;
     }
 }
 
-$extra-large: 1px;
+$extra-large: 1200px;
 @mixin extra-large {
     @media (min-width: #{$extra-large}){
         @content;

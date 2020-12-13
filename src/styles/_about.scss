@@ -70,11 +70,12 @@
         transition: ease-in-out .3s;
         outline: none;
     }
-
-    &__button:hover {
-        cursor: pointer;
-        transition: ease-in-out .3s;
-        background-color: #888e97;
+    @include medium {
+        &__button:hover {
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            background-color: #888e97;
+        }
     }
 
     &__home {
@@ -86,9 +87,10 @@
         height: 100%;
         margin-top: 10px;
     }
-
-    &__home:hover {
-        color: white;
-        transition: ease-in-out .3s;
+    @include medium {
+        &__home:hover {
+            color: white;
+            transition: ease-in-out .3s;
+        }
     }
 }

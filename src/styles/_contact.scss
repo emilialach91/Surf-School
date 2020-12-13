@@ -11,7 +11,7 @@
         color: #315259;
         font-size: 30px;
         text-align: center;
-        margin: 40px 0;
+        margin: 40px 0  20px 0 ;
 
         @include large {
             font-size: 40px;
@@ -99,12 +99,12 @@
         transition: ease-in-out .3s;
         outline: none;
     }
-
-    &__button:hover {
-        cursor: pointer;
-        transition: ease-in-out .3s;
-        background-color: #888e97;
-
+    @include medium {
+        &__button:hover {
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            background-color: #888e97;
+        }
     }
 
     &__home {
@@ -116,12 +116,12 @@
         height: 100%;
         margin-top: 10px;
     }
-
-    &__home:hover {
-        color: white;
-        transition: ease-in-out .3s;
+    @include medium {
+        &__home:hover {
+            color: white;
+            transition: ease-in-out .3s;
+        }
     }
-
 }
 
 #map {
@@ -152,15 +152,14 @@
     cursor: pointer;
 }
 
-
-.fa-facebook-f:hover {
-    color: #4267B2;
-}
-
-.fa-twitter:hover{
-    color: #00acee;
-}
-
-.fa-instagram:hover {
-    color: #8a3ab9;
+@include medium { 
+    .fa-facebook-f:hover {
+        color: #4267B2;
+    }
+    .fa-twitter:hover{
+        color: #00acee;
+    }
+    .fa-instagram:hover {
+        color: #8a3ab9;
+    }
 }
