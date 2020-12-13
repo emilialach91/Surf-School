@@ -9,16 +9,6 @@ html {
     font-family: $primary;
 }
 
-body  {
-    width: 100%;
-    height: 100%;
-    background-image: url("./images/background-wave.png");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
 .master{
     width: 100%;
     height:100vh; 
@@ -54,6 +44,16 @@ body  {
         width: 80%;
         background-position: top;
     }
+}
+
+body  {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/background-wave.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
