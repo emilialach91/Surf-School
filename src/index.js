@@ -1,5 +1,6 @@
 import './styles/main.scss';
 
+
 const image = document.querySelector('.board__image');
 const board = document.getElementById("board-rot");
 const button = document.querySelector('.header__button');
