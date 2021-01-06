@@ -2,10 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 var path = require('path');
-var webpack = require('webpack');
-const DefinePlugin = require('@wepy/plugin-define');
-require('dotenv').config()
-// const api_key = process.env.api_key;
+
 
 module.exports = {
     entry: {
@@ -15,9 +12,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
-    node: {
-        fs: "empty"
-     },
     module: {
         rules: [
             {
@@ -83,8 +77,6 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/contact.html",
             filename: "./contact.html",
-            // inject: false,
-            // apiUrl: `https://maps.googleapis.com/maps/api/js?key=${api_key}&callback=initMap`,
             chunks: ['app']
 
 
@@ -97,9 +89,6 @@ module.exports = {
             patterns: [
               { from: "src/styles/images", to: "images" },
             ],
-        }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
         }),
 ]}
 
