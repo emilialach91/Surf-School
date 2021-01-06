@@ -1,24 +1,37 @@
 import './styles/main.scss';
+require('dotenv').config()
 
 
 const image = document.querySelector('.board__image');
 const board = document.getElementById("board-rot");
 const button = document.querySelector('.header__button');
 const menu = document.getElementById("overlay");
+// require("dotenv/config");
 
+// image.addEventListener('click', () => {
+//     board.classList.toggle("rot")
+//   });
 
-image.addEventListener('click', () => {
-    board.classList.toggle("rot")
-  });
+// button.addEventListener('click', () => {
+//   button.classList.toggle("colour")
+//   menu.classList.toggle("active")
+//   button.classList.toggle("change") 
+//   button.classList.toggle("animated")
+// });
 
-button.addEventListener('click', () => {
-  button.classList.toggle("colour")
-  menu.classList.toggle("active")
-  button.classList.toggle("change") 
-  button.classList.toggle("animated")
-});
+const script = document.createElement('script');
+script.defer = true;
+script.async = true;
+script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NODE_ENV}&callback=initMap`;
 
+document.body.appendChild(script);
 
+// setTimeout(function(){ 
+  // console.log(process.env.API_KEY)
+
+// }, 3000);
+
+console.log(process.env.NODE_ENV)
 
 
 

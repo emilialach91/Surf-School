@@ -45,15 +45,13 @@
         position: relative;
         list-style: none;
         font-family: $primary;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         font-weight: light;
     }
 
     &__object:hover {
         color:rgb(226, 236, 235);
-        transition: ease-in-out 0.2s; 
         text-decoration: none;
-        font-size: 2.5rem;
     }
 }
 

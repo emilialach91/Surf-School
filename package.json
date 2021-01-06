@@ -14,6 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
+    "@wepy/plugin-define": "^2.1.0",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^3.6.0",
@@ -33,11 +34,13 @@
     "autoprefixer": "^9.8.4",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.5.0",
+    "dotenv": "^8.2.0",
     "exports-loader": "^1.1.0",
     "gh-pages": "^3.1.0",
     "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.16.1",
-    "postcss-loader": "^3.0.0"
+    "postcss-loader": "^3.0.0",
+    "posthtml-expressions": "^1.7.1"
   }
 }

@@ -34,10 +34,11 @@
         function initMap() {
           var folkestone = {lat: 51.081398, lng: 1.169456};
           var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: folkestone});
+              document.getElementById('map'), {zoom: 6, center: folkestone});
           var marker = new google.maps.Marker({position: folkestone, map: map});
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Ybbbbh8bPCAE1FspOHocxPWJAR08gGs&callback=initMap"></script>
+    <!-- <script src="<%= htmlWebpackPlugin.options.apiUrl %>"></script> -->
+
 </body>
 </html>

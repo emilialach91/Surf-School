@@ -20,6 +20,7 @@
         font-family: $primary;
         color: #315259;
         font-size: 30px;
+        margin: 40px 0  20px 0 ;
         text-align: center;
         margin-bottom: 25px;
 
@@ -155,7 +156,7 @@
         cursor: pointer;
         opacity: 0.6;
         transition: opacity .3s;
-
+        outline: none;
     }
 
     &__back {
@@ -163,15 +164,12 @@
         border: 1px solid #5b6b82;
         border-radius: 15px;
         color: #5b6b82;
-        background-color: white;
         width: 80px;
         height: 30px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transition: ease-in-out .3s;
         outline: none;
+        text-align: center;
     }
     @include medium {
         &__back:hover{
@@ -183,12 +181,10 @@
 
     &__home {
         color: #5b6b82;
-        text-align: center;
         text-decoration: none;
         width: 100%;
         transition: ease-in-out .3s;
         height: 100%;
-        margin-top: 10px;
     }
     @include medium {
         &__home:hover {
