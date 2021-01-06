@@ -8,8 +8,8 @@
 
     &__content {
         width: 100%;
+        padding-top: 5%;
         text-align: center;
-        padding-bottom: 30px;
         
         @include large {
             padding: 50px 0;
@@ -20,9 +20,8 @@
         font-family: $primary;
         color: #315259;
         font-size: 30px;
-        margin: 40px 0  20px 0 ;
-        text-align: center;
         margin-bottom: 25px;
+        text-align: center;
 
         @include large  {
             font-size: 40px;
@@ -145,7 +144,7 @@
         opacity: 1;
         transition: opacity .3s;
         outline: none;
-
+        
         @include medium {
             width: 200px;
             font-size: 20px;
@@ -161,15 +160,18 @@
 
     &__back {
         margin: 20px 0 20px 9%;
+        background-color: #e6e3e3;
         border: 1px solid #5b6b82;
         border-radius: 15px;
-        color: #5b6b82;
         width: 80px;
         height: 30px;
         cursor: pointer;
         transition: ease-in-out .3s;
         outline: none;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     @include medium {
         &__back:hover{
@@ -180,11 +182,12 @@
     }
 
     &__home {
-        color: #5b6b82;
+        color: #3b3c3d;
         text-decoration: none;
         width: 100%;
         transition: ease-in-out .3s;
         height: 100%;
+        margin-top: 10px;
     }
     @include medium {
         &__home:hover {
