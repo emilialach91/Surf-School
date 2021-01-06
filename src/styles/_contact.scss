@@ -47,7 +47,6 @@
     
         @include large {
             width: 40%;
-            // margin-top: 80px;
         }   
     }
 
@@ -112,8 +111,6 @@
         text-decoration: none;
         width: 100%;
         transition: ease-in-out .3s;
-        height: 100%;
-        margin-top: 10px;
     }
     @include medium {
         &__home:hover {
