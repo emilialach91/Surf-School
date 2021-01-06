@@ -19,10 +19,12 @@ const menu = document.getElementById("overlay");
 //   button.classList.toggle("animated")
 // });
 
+const dupa = process.env.NODE_ENV;
+
 const script = document.createElement('script');
 script.defer = true;
 script.async = true;
-script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NODE_ENV}&callback=initMap`;
+script.src = `https://maps.googleapis.com/maps/api/js?key=${dupa}&callback=initMap`;
 
 document.body.appendChild(script);
 
